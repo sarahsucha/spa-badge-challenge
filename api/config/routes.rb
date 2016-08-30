@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  get 'boots/index'
+  # get 'boots/index'
+
+  resources :boots, only: [:index, :show] do
+    resources :badges, only: [:index, :new, :create]
+  end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
