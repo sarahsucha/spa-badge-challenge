@@ -1,0 +1,6 @@
+        Prefix Verb URI Pattern                          Controller#Action
+   boot_badges GET  /boots/:boot_id/badges(.:format)     badges#index
+               POST /boots/:boot_id/badges(.:format)     badges#create
+new_boot_badge GET  /boots/:boot_id/badges/new(.:format) badges#new
+         boots GET  /boots(.:format)                     boots#index
+          boot GET  /boots/:id(.:format)                 boots#show
